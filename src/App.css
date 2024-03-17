@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.background-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/music-playlist/music-playlist-Edsheeran-bg.png');
+  background-size: cover;
+  width: 100%;
+  height: 35vh;
+  padding: 30px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex-shrink: 0;
+}
+
+.bg-heading {
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 35px;
+  font-weight: bold;
+  margin: 0px;
+}
+
+.bg-para {
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 25px;
+  font-weight: 500;
+  margin: 0px;
+}
+
+.playlist-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #152850;
+  flex-grow: 1;
+  padding: 10px 40px;
+  height: 65vh;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.playlist-heading {
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  border-radius: 5px;
+  width: 300px;
+  padding: 2px;
+}
+
+.style-input {
+  color: #cbd5e1;
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: 500;
+  background-color: transparent;
+  padding-left: 10px;
+  border: none;
+  flex-grow: 1;
+  cursor: none;
+  outline: none;
+}
+
+.search-button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.tracks-list {
+  padding-left: 0px;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  width: 100%;
+}
+
+.not-found-container {
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.not-found-text {
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 35px;
+  font-weight: bold;
+}
